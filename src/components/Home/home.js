@@ -27,11 +27,11 @@ export default function Home() {
           <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </button> */}
         <a className='text-xl text-black font-semibold lg:ml-44 md:ml-32 ml-12 w-64' href="/">Constructor</a>
-        <div className='w-full flex flex-row gap-4 items-center md:mr-24'>
-          <input className='border-2 border-gray-300 border-solid rounded-lg w-6/12 mt-2 indent-2' style={{ "height": "7vh" , "font-family":"Arial, FontAwesome"}} type="text" placeholder='&#xF002; Try Searching<<Worst pages by load speed ' name="name" />
-          <img className='ml-12 lg:ml-28 w-4 md:w-8' src={logout} alt="" />
-          <a className='text-gray-800 hover:text-white text-sm md:text-normal' href="/">web-project.io</a>
-          <img className=' md:ml-8 w-4 md:w-8' src={expand} alt="" />
+        <div className='w-full flex flex-row gap-4 items-center md:mr-40'>
+          <input className='border-2 border-gray-300 border-solid rounded-lg xl:w-96 lg:w-80 md:w-32 sm:w-28 w-8 mt-2 indent-2' style={{ "height": "7vh" , "font-family":"Arial, FontAwesome"}} type="text" placeholder='&#xF002; Try Searching<<Worst pages by load speed ' name="name" />
+          <img className='ml-8 xl:ml-40 lg:ml-20 md:ml-16 w-4 md:w-8' src={logout} alt="" />
+          <a className='xl:ml-32 lg:ml-24 md:ml-16 ml-8 text-gray-800 text-sm md:text-normal' href="/">web-project.io</a>
+          <img className=' xl:ml-32 lg:ml-20 md:ml-16 ml-4 w-4 md:w-8' src={expand} alt="" />
         </div>
       </div>
 
@@ -95,14 +95,50 @@ export default function Home() {
         </div>
 
         <div className='w-11/12 shadow-xl shadow-gray-300 border-solid border-gray-200 rounded-lg'>
-          <div className='ml-4 mt-8 items-center'>
-            <span className='text-gray-400 font-bold text-xs sm:text-base'>Current Active Users</span>
-            <img className="float-right w-8 sm:mr-4" src={menu} alt=" " />
-          </div>
-          <div className='mt-4 mb-4'>
-            <span className='sm:text-3xl text-gray-400 font-semibold ml-4'>21</span>
-          </div>
-          <BarChart />
+            <div className='ml-4 mt-8 items-center'>
+              <span className='text-gray-400 font-bold text-xs sm:text-base'>Current Active Users</span>
+              <img className="float-right w-8 sm:mr-4" src={menu} alt=" " />
+            </div>
+            <div className='mt-4 mb-4'>
+              <span className='sm:text-5xl text-gray-500 font-semibold ml-4'>21</span>
+            </div>
+            <BarChart></BarChart>
+            {/* <div className='w-full grid grid-rows-4 gap-8 mt-4 align-items-start'>
+                <div className='font-semibold text-gray-400 flex flex-row gap-44'>
+                  <span className='ml-12'>Main Active Pages</span>
+                  <span>Link</span>
+                  <span>Users</span>
+                </div>
+
+                <div className='font-bold text-gray-700 flex flex-row gap-44'>
+                  <span className='ml-12'>Main Page</span>
+                  <span>/Index</span>
+                  <span>12</span>
+                </div>
+
+                <div className='font-bold text-gray-700 flex flex-row gap-44'>
+                  <span className='ml-12'>About Page</span>
+                  <span>/About</span>
+                  <span>8</span>
+                </div>
+
+                <div className='font-bold text-gray-700 flex flex-row gap-44'>
+                  <span className='ml-12'>Service Page</span>
+                  <span>/Services</span>
+                  <span>1</span>
+                </div>
+
+            </div> */}
+            <div className='w-full grid grid-rows-7 grid-cols-3 gap-y-4 gap-x-12 justify-items-center'>
+              <div className='mt-4 ml-12 text-gray-500 font-semibold'>Main Active Pages</div> <div className='mt-4 text-gray-500 font-semibold'>Link</div> <div className='mt-4 text-gray-500 font-semibold'>Users</div>
+              <hr className='w-4/5 col-span-3'></hr>
+              <div className='text-gray-600 font-bold'>Main Page</div> <div className='text-gray-600 font-bold'>/Index</div>  <div className='text-gray-600 font-bold'>12</div>
+              <hr className='w-4/5 col-span-3'></hr>
+              <div className='text-gray-600 font-bold'>About Page</div> <div className='text-gray-600 font-bold'>/About</div>  <div className='text-gray-600 font-bold'>8</div>
+              <hr className='w-4/5 col-span-3'></hr>
+              <div className='text-gray-600 font-bold'>Service Page</div> <div className='text-gray-600 font-bold'>/Services</div> <div className='text-gray-600 font-bold'>1</div>
+            </div>
+            <br></br>
         </div>
 
         <div className='w-11/12 shadow-xl shadow-gray-300 border-solid border-gray-200 rounded-lg'>
@@ -115,7 +151,6 @@ export default function Home() {
 
       </div>
 
-      {/* <WorldChart></WorldChart> */}
       <br></br>
       </div>
     </div>

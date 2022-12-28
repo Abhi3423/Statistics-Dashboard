@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Chart as ChartJS } from "chart.js/auto";
 import menu from '../Assets/menu.png';
 
+
+
 import {
   CategoryScale,
   LinearScale,
@@ -24,6 +26,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
 
 export const options = {
 
@@ -99,7 +102,7 @@ export const options = {
 
 
 
-function MultiBarChart() {
+function MultiBarChart() { 
 
     const [userData, setUserData] = useState({
         labels: UserData.map((data) => data.pos),
@@ -155,15 +158,15 @@ function MultiBarChart() {
       <>
       <div>
       <div className='grid grid-cols-2 font-bold text-gray-500 md:grid-cols-4 mt-8 mb-8 2xl:gap-20 xl:gap-12 lg:gap-4 md:gap-20 gap-8 justify-center whitespace-nowrap text-sm'>
-            <div id="Options" className="flex flex-row gap-12">
-            <a href="/">Traffic Channel</a>
+            <div id="Options" className="flex flex-row 2xl:gap-20 xl:gap-16 lg:gap-8 md:gap-20 sm:gap-16 gap-4">
+            <a className="ml-8" href="/">Traffic Channel</a>
             <a href="/">Source or Channel</a>
             <a href="/">Tranisitions</a>
             </div>
-            <a className="float-right w-8 ml-80" href="/" id="toggle"><img src={menu} alt=" "/></a>
+            <a className="float-right 2xl:ml-96 xl:ml-80 lg:ml-72 md:ml-96 sm:ml-52 ml-40" href="/" id="toggle" style={{"width":"20px"}}><img src={menu} alt=" "/></a>
       </div>
-      <Bar options={options} data={userData}></Bar>
-      <hr></hr>
+      <Bar options={options} data={userData} className="h-4/5"></Bar>
+      <hr className="-mt-8 p-12"></hr>
       </div>
       </>
       );

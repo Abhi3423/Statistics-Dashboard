@@ -33,7 +33,7 @@ export default props => {
           <TbAntennaBars1 className='mt-12 justify-self-end cursor-pointer' size={30}></TbAntennaBars1>
         </div>
 
-        <div className='w-20 h-20 rounded-full bg-black ml-16 mt-12'></div>
+        <div className='w-20 h-20 rounded-full ml-16 mt-12' style={{"background-color":"#344466"}}></div>
 
         <div className='text-white ml-16 mt-5'>Hello Jack</div>
 
