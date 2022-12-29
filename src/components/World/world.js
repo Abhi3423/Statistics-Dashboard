@@ -25,7 +25,7 @@ function World() {
 
     return (
         <div className='w-100 flex flex-col justify-items-center align-center'>
-            <p id="my-anchor-element" ></p>
+            <p id="my-anchor-element"></p>
             <Tooltip anchorId="my-anchor-element" content= {content} place="top"></Tooltip>
             {/* <ReactTooltip> {content} </ReactTooltip> */}
             <div className='w-100 border-double' >
@@ -56,7 +56,7 @@ function World() {
                                            setContent(NAME);
                                       }
                                       else{
-                                          setContent("brooooooooo")
+                                          setContent(geo.properties.name);
                                       }
                                      }
                                  }}

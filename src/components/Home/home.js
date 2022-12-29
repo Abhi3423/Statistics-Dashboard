@@ -5,7 +5,7 @@ import BarChart from "../Bar/bar";
 import WorldChart from '../World/world';
 import MultiBarChart from '../MultiBar/multibar';
 import Sidebar from '../Navbar/sidebar';
-import { UserData } from "../Bar/bardata";
+import {IoIosAddCircle} from 'react-icons/io';
 
 import logout from "../Assets/logout.png";
 import expand from "../Assets/expand-arrow.png";
@@ -35,9 +35,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=' mt-12 flex flex-row gap:2 md:gap-8 items-center'>
-        <a className='text-xl text-gray-500 font-semibold lg:ml-44 md:ml-32 ml-12 w-64' href="/">Analytics Home</a>
-        <div className='w-96 grid grid-cols-5 ml-12 h-12 items-center shadow-xl shadow-gray-100 border-solid border-gray-200 border-2 rounded-full'>
+      <div className=' mt-12 grid grid-cols-4 gap-2 md:gap-8 items-center'>
+        <a className='xl:text-xl lg:text-lg text-gray-500 font-semibold lg:ml-40 md:ml-32 ml-12 w-64' href="/">Analytics Home</a>
+        <div className='2xl:w-96 xl:w-80 lg:w-60 grid grid-cols-5 -ml-8 h-12 items-center shadow-xl shadow-gray-100 border-solid border-gray-200 border-2 rounded-full'>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Day</a></div>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Week</a></div>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Month</a></div>
@@ -45,7 +45,7 @@ export default function Home() {
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Year</a></div>
         </div>
 
-        <div className='w-96 grid grid-cols-6 ml-12 h-12 items-center shadow-xl shadow-gray-100 border-solid border-gray-200 border-2 rounded-full'>
+        <div className='2xl:w-96 xl:w-80 lg:w-60 grid grid-cols-6 h-12 gap-1 items-center shadow-xl shadow-gray-100 border-solid border-gray-200 border-2 rounded-full'>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 align-center'><img src={save} alt='' /></div>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Save</a></div>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><img classname='h-4' src={download} alt='' /></div>
@@ -53,15 +53,19 @@ export default function Home() {
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><img src={share} alt='' /></div>
           <div className='text-gray-400 hover:text-black hover:bg-gray-200 text-center'><a href="/">Share</a></div>
         </div>
-
-        <button className='bg-orange-400 hover:bg-orange-600 text-white  p-2 rounded-full flex flex-row justify-center'>Add Widget</button>
+        
+        <div className=''>
+          <button className='bg-orange-400 grid grid-cols-2 hover:bg-orange-600 text-white w-2/5 p-2 rounded-full ml-16'>
+            <IoIosAddCircle className='text-orange-200 mt-1 ml-3'></IoIosAddCircle>
+            <span className='whitespace-nowrap -ml-8 font-semibold'>Add Widget</span></button>
+        </div>
 
       </div>
 
       <div className='grid md:grid-cols-1 md:grid-rows-4 lg:grid-cols-2 lg:grid-rows-1 ml-12 gap-20 mt-12'>
 
         <div className='w-11/12 shadow-xl shadow-gray-300 border-solid border-gray-200 rounded-lg'>
-          <div className='grid grid-cols-2 md:grid-cols-4 mt-8 mb-8 2xl:gap-20 xl:gap-12 lg:gap-4 md:gap-20 gap-8'>
+          <div className='grid grid-cols-2 md:grid-cols-4 mt-8 mb-8 2xl:gap-20 xl:gap-12 lg:gap-4 md:gap-20 gap-8 lg:ml-0 ml-28'>
             <div className='flex flex-col'>
               <span className='text-gray-500 font-semibold xl:text-2xl lg:text-xl'>453</span>
               <span className='text-gray-400'>Users</span>

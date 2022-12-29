@@ -29,8 +29,8 @@ export default props => {
     <Menu isOpen={ true }>
       <div className='flex flex-col outline-none' style={{"background-color":"#202B3F"}}>
         <div className='grid grid-cols-2 text-gray-500 justify-items-stretch'>
-          <MdPerson className="mt-12 justify-self-start" size={24}></MdPerson>
-          <TbAntennaBars1 className='mt-12 justify-self-end cursor-pointer' size={30}></TbAntennaBars1>
+          <MdPerson className=" justify-self-start" size={24}></MdPerson>
+          <TbAntennaBars1 className='justify-self-end cursor-pointer' size={30}></TbAntennaBars1>
         </div>
 
         <div className='w-20 h-20 rounded-full ml-16 mt-12' style={{"background-color":"#344466"}}></div>
