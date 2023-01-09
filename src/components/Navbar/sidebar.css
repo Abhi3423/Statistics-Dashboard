@@ -3,8 +3,8 @@
     position: absolute;
     width: 2%;
     height: 3.5vh;
-    left: 36px;
-    top: 20px;
+    left: 4%;
+    top: 5.5%;
   }
   
   /* Color/shape of burger icon bars */
@@ -42,6 +42,7 @@
     background: #202B3F;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    overflow: hidden;
 
   }
   
@@ -79,4 +80,62 @@
 
   ::-webkit-scrollbar {
     display: none;
+}
+
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+.quarter {
+  position: absolute;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.quarter.one {
+  background: #51A1D1;
+  clip: rect(0px, 60px, 60px, 0px);
+  width: 120px;
+}
+.quarter.two {
+  background: #344466;
+  clip: rect(0px, 120px, 60px, 60px);
+  width: 120px;
+}
+
+.quarter.three {
+  background: #51A1D1;
+  clip: rect(60px,120px, 120px, 60px);
+  width: 120px;
+}
+
+.quarter.four {
+  background: #51A1D1;
+  clip: rect(60px, 60px, 120px, 0px);
+  width: 120px;
+}
+
+.cut{
+  position: absolute;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  background-color: #202B3F;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.profile {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: #344466;
+  border-radius: 50%;
+  pointer-events: none;
 }
